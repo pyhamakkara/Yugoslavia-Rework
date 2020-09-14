@@ -1,0 +1,427 @@
+add_namespace = yugreworkevent
+
+country_event = {
+	id = yugreworkevent.0
+	title = yugreworkevent.0.t
+	desc = yugreworkevent.0.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	#accept
+	option = {
+		name = yugreworkevent.0.a
+		ai_chance = {
+			factor = 90
+		}
+		trigger = {
+			NOT = {
+				has_war_with = YUG
+			}
+		}
+		YUG = {
+			add_to_faction = ROOT
+		}
+	}
+
+	#decline peace
+	option = {
+		name = yugreworkevent.0.b
+		ai_chance = {
+			factor = 10
+		}
+		trigger = {
+			NOT = {
+				has_war_with = YUG			
+			}	
+		}
+	}
+
+	#decline war
+	option = {
+		name = yugreworkevent.0.c
+		ai_chance = {
+			factor = 4000
+		}
+		trigger = {
+			has_war_with = YUG
+		}
+	}
+}
+
+#rally of youth event
+country_event = {
+	id = yugreworkevent.1
+	title = yugreworkevent.1.t
+	desc = yugreworkevent.1.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	trigger = {
+		tag = YUG
+		has_completed_focus = YUG_rally_of_youth
+		date > 1936.1.1
+	}
+	limit = {
+		ideology = communism
+	}
+	
+	option = {
+		name = yugreworkevent.1.a
+		ai_chance = {
+			factor = 4000
+		}
+		add_political_power = 10
+		add_stability = 0.01
+			if = {
+				limit = {
+					has_war = yes
+				}
+				add_war_support = 0.05
+					hidden_effect = {
+						country_event = {
+							name = yugreworkevent.1
+							days = 365
+						}
+					}
+			}
+			else = {
+				add_stability = 0.05
+				hidden_effect = {
+					country_event = {
+						name = yugreworkevent.1
+						days = 365
+					}
+				}
+			}
+	}
+}
+
+#Strategic Value guarantee event
+country_event = {
+	id = yugreworkevent.2
+	title = yugreworkevent.2.t
+	desc = yugreworkevent.2.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #accept
+		name = yugreworkevent.2.a
+		ai_chance = {
+			factor = 40
+		}
+		ROOT = {
+				give_guarantee = YUG
+		}
+		hidden_effect = {
+			YUG = {
+				country_event = {
+					id = yugreworkevent.3
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #decline
+		name = yugreworkevent.2.b
+		ai_chance = {
+			factor = 40
+		}
+		hidden_effect = {
+			YUG = {
+				country_event = {
+					id = yugreworkevent.4
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+#Strategic value accept
+country_event = {
+	id = yugreworkevent.3
+	title = yugreworkevent.3.t
+	desc = yugreworkevent.3.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = yugreworkevent.3.a
+		ai_chance = {
+			factor = 4000
+		}
+	}
+}
+
+#Strategic value decline
+country_event = {
+	id = yugreworkevent.4
+	title = yugreworkevent.4.t
+	desc = yugreworkevent.4.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = yugreworkevent.4.a
+		ai_chance = {
+			factor = 4000
+		}
+	}
+}
+#PeaceTime Alignment
+country_event = {
+	id = yugreworkevent.5
+	title = yugreworkevent.5.t
+	desc = yugreworkevent.5.d
+	picture = GFX_report_event_election_vote
+
+	#is_triggered_only = no
+	#fire_only_once = not
+
+	trigger = {
+		has_idea = YUG_idea_wartime_alignment0
+		tag = YUG
+		has_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = yugreworkevent.5.a
+		if = {
+			limit = {
+				has_idea = YUG_idea_wartime_alignment0
+			}
+			swap_ideas = {
+				remove_idea = YUG_idea_wartime_alignment0
+				add_idea = YUG_idea_peacetime_alignment0
+			}
+		}
+	}
+}
+
+#Wartime Alignment
+country_event = {
+	id = yugreworkevent.6
+	title = yugreworkevent.6.t
+	desc = yugreworkevent.6.d
+	picture = GFX_report_event_election_vote
+
+	#is_triggered_only = no
+	#fire_only_once = not
+
+	trigger = {
+		has_idea = YUG_idea_peacetime_alignment0
+		has_war = yes
+		tag = YUG
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = yugreworkevent.6.a
+		if = {
+			limit = {
+				has_idea = YUG_idea_peacetime_alignment0
+			}
+			swap_ideas = {
+				remove_idea = YUG_idea_peacetime_alignment0
+				add_idea = YUG_idea_wartime_alignment0
+			}
+		}
+	}
+}
+
+#Finished Highway
+country_event = {
+	id = yugreworkevent.7
+	title = yugreworkevent.7.t
+	desc = yugreworkevent.7.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	option = {
+		name = yugreworkevent.7.a
+		custom_effect_tooltip = 09tt_YUG_rework
+			hidden_effect = {
+				add_stability = 0.05
+				836 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				109 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				45 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				847 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				107 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				108 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+				106 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+	}
+}
+
+#Balkan Capital Request
+country_event = {
+	id = yugreworkevent.8
+	title = yugreworkevent.8.t
+	desc = yugreworkevent.8.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	option = {
+		name = yugreworkevent.8.a
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			YUG = {
+				country_event = {
+					name = yugreworkevent.10
+				}
+			}
+		}
+	}
+	option = {
+		name = yugreworkevent.8.b
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Balkan Capital Romania Accepted
+country_event = {
+	id = yugreworkevent.10
+	title = yugreworkevent.10.t
+	desc = yugreworkevent.10.d
+	picture = GFX_focus_eng_crush_the_dream
+
+	fire_only_once = yes
+
+	option = {
+		name = yugreworkevent.10.a
+		ai_chance = {
+			factor = 4000
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = ROM
+					}
+				}
+				add_political_power = 10
+			}
+			if = { 
+				limit = {
+					FROM = {
+						tag = ALB
+					}
+				}
+				add_political_power = 50
+			}
+		}
+	}
+}
+
+#Rig the Elections Communist
+country_event = {
+	id = yugreworkevent.9
+	title = yugreworkevent.9.t
+	desc = yugreworkevent.9.d
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	option = {
+		name = yugreworkevent.9.a
+		ai_chance = {
+			factor = 80
+		}
+		set_politics = {
+			ruling_party = communism 
+			elections_allowed = no 
+		}
+		add_stability= -0.1
+	}
+}
+
+#Decide Between Neutral Monarchy
+country_event = {
+	id = yugreworkevent.11
+	title = yugreworkevent.11.t
+	desc = yugreworkevent.11.d
+	picture = GFX_focus_eng_crush_the_dream
+
+	fire_only_once = yes
+
+	option = {
+		name = yugreworkevent.11.a
+		ai_chance = {
+			factor = 40
+		}
+		add_ideas = YUG_idea_strenghten_the_monarchism
+	}
+	option = {
+		name = yugreworkevent.11.b
+		ai_chance = {
+			factor = 40
+		}
+		add_ideas = YUG_idea_strenghten_the_neutrality
+	}
+}
+

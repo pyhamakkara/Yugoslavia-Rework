@@ -1,0 +1,8 @@
+spriteTypes = {
+
+    #Icon for idea JRM
+    SpriteType = {
+      	name = "GFX_idea_YUG_jrm"
+        texturefile = "gfx/interface/ideas/idea_YUG_jrm.dds"
+	}
+}

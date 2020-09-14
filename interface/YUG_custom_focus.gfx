@@ -1,0 +1,246 @@
+spriteTypes = { 
+	##Icon For: titoism
+	SpriteType = { 
+		name = "GFX_yugr_focus_titoism1"
+		texturefile = "gfx/interface/goals/yug/yugr_focus_titoism1.dds"
+	}
+
+	##Icon Shine For: titoism
+	SpriteType = { 
+		name = "GFX_YUG_titoism-17581_shine"
+		texturefile = "gfx/interface/goals/yug/yugr_focus_titoism1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/yug/yugr_focus_titoism1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/yug/yugr_focus_titoism1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: unity and bro
+	SpriteType = { 
+		name = "GFX_YUG_unity_and_bro-17583"
+		texturefile = "gfx/interface/goals/GFX_YUG_unity_and_bro-17583.dds"
+	}
+
+	##Icon Shine For: unity and bro
+	SpriteType = { 
+		name = "GFX_YUG_unity_and_bro-17583_shine"
+		texturefile = "gfx/interface/goals/GFX_YUG_unity_and_bro-17583.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_unity_and_bro-17583.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_unity_and_bro-17583.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: titoism0
+	SpriteType = { 
+		name = "GFX_YUG_titoism0-17584"
+		texturefile = "gfx/interface/goals/yug/GFX_YUG_titoism0-17584.dds"
+	}
+
+	##Icon Shine For: titoism0
+	SpriteType = { 
+		name = "GFX_YUG_titoism0-17584_shine"
+		texturefile = "gfx/interface/goals/GFX_YUG_titoism0-17584.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_titoism0-17584.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_titoism0-17584.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: solidify
+	SpriteType = { 
+		name = "GFX_YUG_solidify-17585"
+		texturefile = "gfx/interface/goals/GFX_YUG_solidify-17585.dds"
+	}
+
+	##Icon Shine For: solidify
+	SpriteType = { 
+		name = "GFX_YUG_solidify-17585_shine"
+		texturefile = "gfx/interface/goals/GFX_YUG_solidify-17585.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_solidify-17585.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_solidify-17585.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: estab udba
+	SpriteType = { 
+		name = "GFX_YUG_estab_udba-17582"
+		texturefile = "gfx/interface/goals/GFX_YUG_estab_udba-17582.dds"
+	}
+
+	##Icon Shine For: estab udba
+	SpriteType = { 
+		name = "GFX_YUG_estab_udba-17582_shine"
+		texturefile = "gfx/interface/goals/GFX_YUG_estab_udba-17582.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_estab_udba-17582.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_YUG_estab_udba-17582.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	#Icon for focus organize ina
+    SpriteType = {
+      	name = "GFX_focus_YUG_organize_ina"
+        texturefile = "gfx/interface/goals/focus_YUG_organize_ina.dds"
+	}
+
+	#Icon for focus Establish JNA
+    SpriteType = {
+      	name = "GFX_focus_YUG_establish_jna"
+        texturefile = "gfx/interface/goals/focus_YUG_establish_jna.dds"
+	}
+
+	#Icon for focus Expand JNA service
+    SpriteType = {
+      	name = "GFX_focus_YUG_expand_jna_service"
+        texturefile = "gfx/interface/goals/focus_YUG_expanded_jna_service.dds"
+	}
+
+	#Icon for focus Agricultural Safety Funds
+    SpriteType = {
+      	name = "GFX_focus_YUG_agricultural_safety_funds"
+        texturefile = "gfx/interface/goals/focus_YUG_agricultural_safety_funds.dds"
+	}
+
+	#Icon for focus Build Brotherhood and Unity Highway Phases
+    SpriteType = {
+      	name = "GFX_focus_YUG_brotherhood_and_unity_highway"
+        texturefile = "gfx/interface/goals/focus_YUG_brotherhood_and_unity_highway.dds"
+	}
+
+	#Icon for focus Yugoslav Hyrodelectric
+    SpriteType = {
+      	name = "GFX_focus_YUG_hydrodam_yugoslavia"
+        texturefile = "gfx/interface/goals/focus_YUG_hydrodam_yugoslavia.dds"
+	}
+
+	#Icon for focus Manipulate Soviets
+    SpriteType = {
+      	name = "GFX_focus_YUG_manipulate_SOV"
+        texturefile = "gfx/interface/goals/focus_YUG_manipulate_SOV.dds"
+	}
+
+	#Icon for focus Manipulate USA
+    SpriteType = {
+      	name = "GFX_focus_YUG_manipulate_USA"
+        texturefile = "gfx/interface/goals/focus_YUG_manipulate_USA.dds"
+	}
+
+	#Icon for focus Torpedo
+    SpriteType = {
+      	name = "GFX_focus_YUG_torpedo"
+        texturefile = "gfx/interface/goals/focus_YUG_torpedo.dds"
+	}
+#Next Sprite
+ }
